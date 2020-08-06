@@ -1,0 +1,11 @@
+[Unit]
+Description=Fan Service
+
+[Service]
+User=pi
+WorkingDirectory=/home/pi/fan
+ExecStart=python3 fan.py
+Restart=never
+
+[Install]
+WantedBy=multi-user.target
